@@ -66,48 +66,48 @@
     button:hover {
       background-color: #45a049;
     }
+
+    .ad-banner {
+      margin-top: 20px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <h1>Clauers 3D personalitzats</h1>
   <p>Reserva un clauer únic dissenyat i imprès amb impressora 3D!</p>
 
-  <form id="reservaForm">
+  <form action="https://formsubmit.co/xavigarciacascon@gmail.com" method="POST">
     <label>Nom:
-      <input type="text" name="nom" required />
+      <input type="text" name="Nom" required />
     </label>
     <label>Correu:
-      <input type="email" name="email" required />
+      <input type="email" name="Correu" required />
     </label>
     <label>Tipus de clauer:
-      <input type="text" name="tipus" />
+      <input type="text" name="Tipus de clauer" />
     </label>
     <label>Quantitat:
-      <input type="number" name="quantitat" min="1" />
+      <input type="number" name="Quantitat" min="1" />
     </label>
     <label>Observacions:
-      <textarea name="missatge"></textarea>
+      <textarea name="Observacions"></textarea>
     </label>
     <button type="submit">Enviar reserva</button>
   </form>
 
-  <p id="missatgeFinal" style="margin-top: 20px; font-weight: bold; color: green; display: none;">Reserva enviada correctament!</p>
-
-  <!-- Adsterra Social Bar Code actualitzat -->
-  <script type='text/javascript' src='//pl26651926.profitableratecpm.com/52/56/b2/5256b23e0c1eb9594c5504d290b226bc.js'></script>
-
-  <script>
-    document.getElementById('reservaForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(e.target);
-      let dades = '';
-      for (const [clau, valor] of formData.entries()) {
-        dades += `${clau}: ${valor}\n`;
-      }
-      alert('Has enviat la següent informació:\n' + dades);
-      document.getElementById('missatgeFinal').style.display = 'block';
-      e.target.reset();
-    });
-  </script>
+  <!-- Banner publicitari Adsterra -->
+  <div class="ad-banner">
+    <script type="text/javascript">
+      atOptions = {
+        'key' : '24942b88a0d87ad001c25ea1f70675fa',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/24942b88a0d87ad001c25ea1f70675fa/invoke.js"></script>
+  </div>
 </body>
 </html>
